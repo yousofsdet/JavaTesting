@@ -1,0 +1,13 @@
+
+if (hava==guzel){
+ 
+			if (piknikalani==musait)
+          System.out.println("Pikniğe gidelim.");
+      
+			else
+			    System.out.println("Gezmeye gidelim.");
+		}
+		else {
+			System.out.println("Evde oturalım.");
+    }
+}
