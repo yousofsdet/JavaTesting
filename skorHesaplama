@@ -1,0 +1,32 @@
+
+
+
+public class overloading {	
+
+
+	public static void toplama(int a,int b, int c)
+	{		
+		System.out.println(" Toplamlari = " + (a+b+c));
+	}
+		public static void toplama (int a, int b)
+	{
+		System.out.println(" Toplamlari = " + (a+b));
+		}
+	
+	public static void toplama (int a, int b, int c, int d)
+	{
+	
+		System.out.println(" Toplamlari = " + (a+b+c+d));
+	}
+	
+	public static void skorhesaplama(String name, int skor) {
+		
+		System.out.println( name + " isimli oyuncunun puani = " + skor);
+	}
+	public static void main(String[] args) {
+		toplama (1,2,3);
+		toplama (11,12);
+		toplama (21,22,23,24);
+		skorhesaplama ("Yusuf", 200);
+		}
+    }
