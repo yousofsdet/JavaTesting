@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class ATM {
+
+	public static void main(String[] args) {
+		
+		System.out.println(" ");
+		System.out.println("Bir numara seciniz");
+		System.out.println(" ");
+
+		System.out.println("1 - Bakiye goruntuleme ");
+		System.out.println("2 - Para yatirma ");
+		System.out.println("3 - Para Cekme ");
+		System.out.println("4 - Sistemden cikis yap ");
+
+		
+		Scanner s = new Scanner(System.in);
+		
+		
+		int secim = s.nextInt();
+		int bakiye = 1000;
+		int miktar;		
+				
+				if (secim == 1) {
+					
+					System.out.println("Bakiyeniz  " + bakiye + "Tl dir ");
+				}
+				
+				else if (secim == 2) {
+					System.out.println("Yatiracaginiz Miktari giriniz ");
+					miktar = s.nextInt();
+					bakiye += miktar;
+					
+					System.out.println("Yeni bakiyeniz " + bakiye + " tl dir");
+				}
+				
+				else if (secim == 3) {
+						System.out.println("Cekeceginiz miktari giriniz ");
+						miktar = s.nextInt();
+						bakiye -= miktar;
+						System.out.println("Yeni bakiyeniz " + bakiye + " tl dir");
+				}
+						
+				else if (secim == 4) {
+							System.out.println("Sistemden cikis yapiliyor...");
+				}
+				
+				else {
+					System.out.println("Gecersiz Islem...");
+					
+				}
+					
+	
+	}
+
+}
